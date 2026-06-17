@@ -1,9 +1,9 @@
 # Project Title
-Your project's title
+Green Root
 
 ## Student Information
-**Student number:** Your student number <br>
-**Student Name:** Your full name
+**Student number:** ST10483924 <br>
+**Student Name:** Wanga Mamphodo
 
 ## Project Overview
 
