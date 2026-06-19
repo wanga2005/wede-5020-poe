@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gardens | GreenRoot Urban Gardens</title>
+    <meta name="description" content="Explore GreenRoot's rooftop market farms, school garden hubs, and community harvest spaces in Pretoria.">
+    <meta name="theme-color" content="#4f8a35">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="roof-garden.webp" alt="Rooftop garden at GreenRoot" width="56" height="56">
+                    <span>GreenRoot</span>
+                </a>
+            </div>
+            <nav aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gardens.html" class="active">Our Gardens</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+            <section id="gardens-hero">
+                <h1>City Gardens That Feed and Inspire</h1>
+                <p>We transform unused rooftops, courtyards and public spaces into thriving, edible landscapes for local communities.</p>
+            </section>
+
+            <section id="project-filter" class="filter-bar">
+                <div>
+                    <label for="project-search">Search gardens</label>
+                    <input id="project-search" type="search" placeholder="Search by name or style" aria-label="Search garden projects">
+                </div>
+                <div>
+                    <label for="project-category">Filter by type</label>
+                    <select id="project-category" aria-label="Select garden project type">
+                        <option value="all">All projects</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="education">Education</option>
+                        <option value="community">Community</option>
+                    </select>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Featured Projects</h2>
+                <div id="project-list" class="project-grid"></div>
+            </section>
+
+            <section id="gallery" class="gallery-section">
+                <h2>Gallery</h2>
+                <div id="gallery-grid" class="gallery-grid">
+                    <a href="#" class="gallery-item" data-large="img/ornamental-garden.jpg" data-alt="Colorful ornamental garden with vibrant blooms and landscaping">
+                        <img src="img/ornamental-garden.jpg" alt="Colorful ornamental garden with vibrant blooms and landscaping" loading="lazy">
+                    </a>
+                    <a href="#" class="gallery-item" data-large="img/garden-pathway.jpg" data-alt="Serene garden pathway with planted borders">
+                        <img src="img/garden-pathway.jpg" alt="Serene garden pathway with planted borders" loading="lazy">
+                    </a>
+                    <a href="#" class="gallery-item" data-large="img/community-garden.jpg" data-alt="Community vegetable garden with raised beds">
+                        <img src="img/community-garden.jpg" alt="Community vegetable garden with raised beds" loading="lazy">
+                    </a>
+                    <a href="#" class="gallery-item" data-large="img/rooftop-garden.jpg" data-alt="Urban rooftop garden at residential building">
+                        <img src="img/rooftop-garden.jpg" alt="Urban rooftop garden at residential building" loading="lazy">
+                    </a>
+                </div>
+            </section>
+
+            <div id="lightbox" class="lightbox" aria-hidden="true">
+                <div class="lightbox-content">
+                    <button type="button" class="lightbox-close" aria-label="Close gallery view">×</button>
+                    <img id="lightbox-image" src="" alt="" loading="lazy">
+                    <p id="lightbox-caption"></p>
+                </div>
+            </div>
+
+            <section id="how-we-work">
+                <h2>How It Works</h2>
+                <p>We assess urban sites, design sustainable systems, install the garden, and train local teams to manage ongoing care.</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 GreenRoot Urban Gardens. All Rights Reserved.</p>
+            <div class="socials">
+                <p>Follow us: Instagram | Facebook | Twitter</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

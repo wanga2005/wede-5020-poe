@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | GreenRoot Urban Gardens</title>
+    <meta name="description" content="Contact GreenRoot Urban Gardens for project proposals, volunteer enquiries, and garden design support in Pretoria.">
+    <meta name="theme-color" content="#4f8a35">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="roof-garden.webp" alt="Rooftop garden at GreenRoot" width="56" height="56">
+                    <span>GreenRoot</span>
+                </a>
+            </div>
+            <nav aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gardens.html">Our Gardens</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+            <section id="contact-hero">
+                <h1>Contact GreenRoot</h1>
+                <p>Have questions? We’re here to help you plan your next green space.</p>
+            </section>
+
+            <section id="details">
+                <h2>Reach Us</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Email</h3>
+                        <p>hello@greenrootgardens.co.za</p>
+                    </div>
+                    <div class="card">
+                        <h3>Phone</h3>
+                        <p>+27 12 345 6789</p>
+                    </div>
+                    <div class="card">
+                        <h3>Office</h3>
+                        <p>Pretoria, South Africa</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact-form-section">
+                <h2>Send a Message</h2>
+                <form id="contact-form-element" class="form-card" novalidate>
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <label for="contact-name">Full Name</label>
+                            <input id="contact-name" name="contact-name" type="text" placeholder="Your full name" required>
+                            <p class="error-message" aria-live="polite"></p>
+                        </div>
+                        <div class="input-group">
+                            <label for="contact-email">Email Address</label>
+                            <input id="contact-email" name="contact-email" type="email" placeholder="name@example.com" required>
+                            <p class="error-message" aria-live="polite"></p>
+                        </div>
+                        <div class="input-group">
+                            <label for="contact-phone">Phone Number</label>
+                            <input id="contact-phone" name="contact-phone" type="tel" placeholder="+27123456789" pattern="^\+?[0-9]{9,15}$">
+                            <p class="error-message" aria-live="polite"></p>
+                        </div>
+                        <div class="input-group">
+                            <label for="contact-type">Message Type</label>
+                            <select id="contact-type" name="contact-type" required>
+                                <option value="">Choose one</option>
+                                <option value="General enquiry">General enquiry</option>
+                                <option value="Volunteer request">Volunteer request</option>
+                                <option value="Sponsorship request">Sponsorship request</option>
+                            </select>
+                            <p class="error-message" aria-live="polite"></p>
+                        </div>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label for="contact-message">Your Message</label>
+                        <textarea id="contact-message" name="contact-message" rows="6" placeholder="Write your message here..." required minlength="20"></textarea>
+                        <p class="error-message" aria-live="polite"></p>
+                    </div>
+
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+                <div id="contact-result" aria-live="polite"></div>
+            </section>
+
+            <section id="contact-map-section">
+                <h2>Find Us</h2>
+                <div id="contact-map" class="map-card" aria-label="Interactive map of GreenRoot location"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 GreenRoot Urban Gardens. All Rights Reserved.</p>
+            <div class="socials">
+                <p>Follow us: Instagram | Facebook | Twitter</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
